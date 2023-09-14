@@ -1,6 +1,6 @@
 import sys
-sys.path.append('../..')
-from src.data import reshape_data
+sys.path.append('../../')
+from data import reshape_data
 
 import base64
 import datetime

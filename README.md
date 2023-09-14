@@ -1,4 +1,4 @@
-# general_project_template
+# enps_dash_app
 
 This is a Dash Plotly App designed to allow Domino Printing HR personnel to carry out eNPS Sentiment Analysis independently.
   
