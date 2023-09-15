@@ -1,5 +1,5 @@
-import sys
-sys.path.append('../../')
+#import sys
+#sys.path.append('../../')
 from data import reshape_data
 
 import base64
