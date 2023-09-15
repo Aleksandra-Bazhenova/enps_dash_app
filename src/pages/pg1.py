@@ -1,22 +1,7 @@
-#import sys
-#sys.path.append('../../')
-
-import pandas as pd
-import numpy as np
-
 import dash
 from dash import dcc, html
-from dash import no_update
-from dash import dash_table
-from dash.dependencies import Input, Output, State
-import plotly.express as px
 
 dash.register_page(__name__, path='/') # home page
-
-#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-
-#data = pd.read_excel("../../data/raw/global eNPS responses_June 2023.xlsx")
-#df = reshape_data.make_wide_df(data)
 
 layout = html.Div([ # this code section taken from Dash docs https://dash.plotly.com/dash-core-components/upload
     # CSS style the upload component
