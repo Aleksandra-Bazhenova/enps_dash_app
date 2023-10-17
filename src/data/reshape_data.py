@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 #data = pd.read_excel("../../data/raw/global eNPS responses_June 2023.xlsx")
 
@@ -19,4 +18,3 @@ def make_wide_df(data):
         
     return data_wide
 
-#print(make_wide_df(data).head())

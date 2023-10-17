@@ -1,5 +1,13 @@
 # second callback with output feeding into the html.Div(id='output-div') in the app.layout
 
+import dash
+from dash.dependencies import Input, Output, State
+from dash import dcc
+
+import plotly.express as px
+
+from app_instance import app
+
 @app.callback(Output('output-div', 'children'),
               Input('submit-button','n_clicks'),
               State('stored-data','data'),

@@ -1,17 +1,11 @@
-import os
-os.getcwd()
+#import os
+#os.getcwd()
 
 import dash
 from dash import dcc, html
 
-app = dash.Dash(
-    __name__,
-    use_pages=True,
-    external_stylesheets=[
-        'https://codepen.io/chriddyp/pen/bWLwgP.css'
-    ],
-    suppress_callback_exceptions=True
-)
+from app_instance import app
+from components import make_graphs, update_output
     
 app.layout = html.Div(
     [

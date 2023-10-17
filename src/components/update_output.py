@@ -1,3 +1,8 @@
+from dash.dependencies import Input, Output, State
+
+from app_instance import app
+from data import parse_contents
+
 # first callback with output feeding into the html.Div(id='output-datatable') in the app.layout
 
 """ In this callback function, the Input and States (contents,  filename, last_modified) are taken from the dcc.Upload above.
@@ -14,7 +19,7 @@
 def update_output(list_of_contents, list_of_names, list_of_dates):
     if list_of_contents is not None:
         children = [
-            parse_contents(c, n, d) for c, n, d in
+            parse_contents.parse_contents(c, n, d) for c, n, d in
             zip(list_of_contents, list_of_names, list_of_dates)
             ]
         return children
