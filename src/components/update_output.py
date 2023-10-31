@@ -1,7 +1,7 @@
 from dash.dependencies import Input, Output, State
 
 from app_instance import app
-from data import parse_contents
+from data import parse_file_contents
 
 # first callback with output feeding into the html.Div(id='output-datatable') in the app.layout
 
@@ -19,7 +19,7 @@ from data import parse_contents
 def update_output(list_of_contents, list_of_names, list_of_dates):
     if list_of_contents is not None:
         children = [
-            parse_contents.parse_contents(c, n, d) for c, n, d in
+            parse_file_contents.parse_contents(c, n, d) for c, n, d in
             zip(list_of_contents, list_of_names, list_of_dates)
             ]
         return children
