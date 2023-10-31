@@ -5,7 +5,8 @@ import dash
 from dash import dcc, html
 
 from app_instance import app
-from components import make_graphs, update_output
+from components import update_output
+from vizualization import summary_graph
     
 app.layout = html.Div(
     [
