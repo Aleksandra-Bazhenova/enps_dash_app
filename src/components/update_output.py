@@ -5,7 +5,7 @@ from data import parse_file_contents
 
 # first callback with output feeding into the html.Div(id='output-datatable') in the app.layout
 
-""" In this callback function, the Input and States (contents,  filename, last_modified) are taken from the dcc.Upload above.
+""" In this callback function, the Input and States (contents,  filename, last_modified) are taken from the dcc.Upload.
     These 3 props are then used as inputs into def update_output() function.
     'Input' will trigger dash callback; 'State' will not. 'State allows to pass extra information along without triggering the callback.
     The update_output() function checks that the list of contents is not None.

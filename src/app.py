@@ -9,6 +9,7 @@ from app_instance import app
 from components import update_output
 from vizualization import summary_graph
 
+
 sidebar = dbc.Nav(
     [
         dbc.NavLink(
@@ -31,13 +32,16 @@ app.layout = dbc.Container(
         dbc.Row(
             [
                 dbc.Col(
-                    html.Div(
-                        "Domino eNPS Sentiment Analysis with Dash",
-                        style={
-                            'fontsize':50,
-                            'textAlign':'center'
+                    [
+                      html.Div(
+                          "Domino eNPS Sentiment Analysis with Dash",
+                            style={
+                                'fontsize':50,
+                                'textAlign':'center'
                         }
-                    )
+                      )  
+                    ]
+                    
                 )
             ]
         ),
@@ -58,7 +62,9 @@ app.layout = dbc.Container(
     fluid=True
 )
    
-"""app.layout = html.Div(
+"""
+
+app.layout = html.Div(
     [
         # framework of the main app
         html.Div(
@@ -79,7 +85,9 @@ app.layout = dbc.Container(
         html.Hr(),
         dash.page_container # content for each page
     ]
-)"""
+)
+
+"""
 
 if __name__ == '__main__':
     app.run_server(debug=True)
