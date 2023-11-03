@@ -74,5 +74,5 @@ def parse_contents(contents, filename, date):
             page_size=15,
             style_table={'overflowX': 'scroll'}
         ),
-        dcc.Store(id='stored-data', data=wide_df.to_dict('records')), # store data into users browser, max 2-3MB (can't use for very large files)
+        dcc.Store(id='stored-data', data=wide_df.to_dict('records')), # invisible component, stores data into users browser, max 2-3MB (can't use for very large files)
     ])
