@@ -10,5 +10,3 @@ layout = html.Div(
         dcc.Markdown('# This will be the content of Page 2')
     ]
 )
-
-def get_data()
