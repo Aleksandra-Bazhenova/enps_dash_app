@@ -29,6 +29,7 @@ sidebar = dbc.Nav(
 
 app.layout = dbc.Container(
     [
+        dcc.Store(id='stored-data'), # invisible component, stores data into users browser, max 2-3MB (can't use for very large files)
         dbc.Row(
             [
                 dbc.Col(
@@ -91,3 +92,4 @@ app.layout = html.Div(
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+    
